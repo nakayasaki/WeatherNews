@@ -5,7 +5,7 @@ const resultDiv = document.getElementById("weatherResult");
 forecastBtn.addEventListener("click", () => {
   
 const city = document.querySelector('input[name="city"]:checked').value;
-    fetch(`http://localhost:3000/forecast?city=${city}`)
+    fetch(`http://weathernews-4jac.onrender.com/forecast?city=${city}`)
     .then(res => res.json())
     .then(data => {
       resultDiv.innerHTML = ""; // 前の結果をクリア
